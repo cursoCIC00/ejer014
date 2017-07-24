@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ejer014
 {
-    public class Class1
+    public interface IVentaConverter
     {
+        VentaDTO EntityToDTO(Venta venta);
+        Venta DTOToEntity(VentaDTO ventaDTO);
     }
 }
